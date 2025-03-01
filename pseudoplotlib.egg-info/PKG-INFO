@@ -1,0 +1,34 @@
+Metadata-Version: 2.2
+Name: pseudoplotlib
+Version: 0.1.0
+Summary: Matplotlib-based module for plotting pseudo protein representations
+Home-page: https://github.com/cookie2004/pseudoplotlib
+Author: KittenMittens
+Author-email: cookie2004@gmail.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy>=1.18
+Requires-Dist: matplotlib>=3.2
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# Pseudo Protein Structure Generator
+# Forked from @sokrypton
+
+This repository provides tools to generate pseudo protein structures.  

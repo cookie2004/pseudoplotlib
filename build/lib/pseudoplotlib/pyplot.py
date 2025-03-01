@@ -168,15 +168,6 @@ def plot_pseudo_3D(xyz, c=None, ax=None, chainbreak=5, Ls=None,
   return ax.add_collection(lines)
 
 def plot_ticks(ax, Ls, Ln=None, add_yticks=False):
-  """
-  Plots ticks on a given axis to indicate chain boundaries.
-
-  Args:
-    ax (matplotlib.axes.Axes): The axis to plot ticks on.
-    Ls (list of int): List of lengths for each chain.
-    Ln (int, optional): Total length of the sequence. If None, it's calculated as the sum of Ls.
-    add_yticks (bool, optional): Whether to add y-axis tick labels. Defaults to False.
-  """
   if Ln is None: Ln = sum(Ls)
   L_prev = 0
   for L_i in Ls[:-1]:
@@ -377,7 +368,6 @@ def make_animation(xyz,
       plot_ticks(ax3, Ls, pairwise[0].shape[0])
 
   # make animation!
-  ax1.axis('off')
   ani = animation.ArtistAnimation(fig, ims, blit=True, interval=interval)
   plt.close()
   return ani

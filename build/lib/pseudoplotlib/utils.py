@@ -1,19 +1,6 @@
 import numpy as np
 
 def rescale(a, amin=None, amax=None):
-    """
-    Rescales a NumPy array to the range [0, 1].
-
-    Values outside the specified range [amin, amax] are clipped to the range boundaries.
-
-    Args:
-        a: A NumPy array to rescale.
-        amin: The minimum value for rescaling. If None, the minimum value of 'a' is used.
-        amax: The maximum value for rescaling. If None, the maximum value of 'a' is used.
-
-    Returns:
-        A NumPy array with rescaled values in the range [0, 1].
-    """
     a = np.copy(a)
     if amin is None: amin = a.min()
     if amax is None: amax = a.max()

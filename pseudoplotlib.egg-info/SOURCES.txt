@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+pseudoplotlib/__init__.py
+pseudoplotlib/colormaps.py
+pseudoplotlib/pyplot.py
+pseudoplotlib/utils.py
+pseudoplotlib.egg-info/PKG-INFO
+pseudoplotlib.egg-info/SOURCES.txt
+pseudoplotlib.egg-info/dependency_links.txt
+pseudoplotlib.egg-info/requires.txt
+pseudoplotlib.egg-info/top_level.txt

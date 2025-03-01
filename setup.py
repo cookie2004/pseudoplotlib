@@ -6,15 +6,15 @@ setup(
     packages=find_packages(), # Automatically find all packages in your directory
     install_requires=[
         # List your dependencies here, e.g.,
-        # 'numpy>=1.18',
-        # 'matplotlib>=3.2',
+        'numpy>=1.18',
+        'matplotlib>=3.2',
     ],
-    author='Your Name',     # Replace with your name
-    author_email='your.email@example.com', # Replace with your email
-    description='A brief description of your library',
-    long_description=open('README').read(), # Read your README for long description
+    author='KittenMittens',     # Replace with your name
+    author_email='cookie2004@gmail.com', # Replace with your email
+    description='Matplotlib-based module for plotting pseudo protein representations',
+    long_description=open('README.md').read(), # Read your README for long description
     long_description_content_type='text/markdown', # If your README is Markdown
-    url='Your GitHub URL (optional)', # If you have a GitHub repo
+    url='https://github.com/cookie2004/pseudoplotlib', # If you have a GitHub repo
     classifiers=[
         # Optional - Classifiers help users find your project
         'Development Status :: 3 - Alpha',  # Or "4 - Beta" or "5 - Production/Stable"
