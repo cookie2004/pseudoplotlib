@@ -54,15 +54,15 @@ def nankabsch(a,b,**kwargs):
     # Call the kabsch function with the filtered coordinates and additional arguments
     return kabsch(a,b,**kwargs)
 
-def plot_pseudo_3D(xyz, c=None, ax=None, chainbreak=5, Ls=None,
+def pseudo(xyz, c=None, ax=None, chainbreak=5, Ls=None,
                    cmap="gist_rainbow", line_w=2.0,
                    cmin=None, cmax=None, zmin=None, zmax=None,
-                   shadow=0.95,remove_axes=False):
+                   shadow=0.95,remove_axes=True):
   """
   Plots a pseudo-3D representation of a protein structure in 2D, with optional color mapping.
 
   Parameters:
-  xyz (array-like): Coordinates of the protein structure.
+  xyz (array-like): Coordinates of the protein structure of shape (N, 3) where N = number of atoms
   c (array-like, optional): Colors for each segment.
   ax (matplotlib.axes.Axes, optional): Matplotlib Axes object to plot on.
   chainbreak (float, optional): Distance to consider a break in the chain.
@@ -173,7 +173,7 @@ def plot_ticks(ax, Ls, Ln=None, add_yticks=False):
 
   Args:
     ax (matplotlib.axes.Axes): The axis to plot ticks on.
-    Ls (list of int): List of lengths for each chain.
+    Ls (list of wwint): List of lengths for each chain.
     Ln (int, optional): Total length of the sequence. If None, it's calculated as the sum of Ls.
     add_yticks (bool, optional): Whether to add y-axis tick labels. Defaults to False.
   """
@@ -345,12 +345,12 @@ def make_animation(xyz,
     if sitewise is None:
       if sitewise_color == "chain":
         c = np.concatenate([[n]*L for n,L in enumerate(length)])
-        ims[-1].append(plot_pseudo_3D(pos[k], c=c,  Ls=Ls, cmap=pymol_cmap, cmin=0, cmax=39, **flags))
+        ims[-1].append(pseudo(pos[k], c=c,  Ls=Ls, cmap=pymol_cmap, cmin=0, cmax=39, **flags))
       else:
         L = pos[k].shape[0]
-        ims[-1].append(plot_pseudo_3D(pos[k], c=np.arange(L)[::-1],  Ls=Ls, cmin=0, cmax=L, **flags))  
+        ims[-1].append(pseudo(pos[k], c=np.arange(L)[::-1],  Ls=Ls, cmin=0, cmax=L, **flags))  
     else:
-      ims[-1].append(plot_pseudo_3D(pos[k], c=sitewise[k], Ls=Ls, cmin=sitewise_min, cmax=sitewise_max, **flags))
+      ims[-1].append(pseudo(pos[k], c=sitewise[k], Ls=Ls, cmin=sitewise_min, cmax=sitewise_max, **flags))
 
     if seq is not None:
       if seq[k].shape[0] == 1:
