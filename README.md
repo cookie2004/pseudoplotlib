@@ -37,8 +37,6 @@ PseudoPlotLib is a specialized plotting library designed for visualizing pseudo 
 import pseudoplotlib as ppl
 
 # Basic example
-# (Add a simple example of your library's usage here)
-
 # Load and convert PDB file to XYZ coordinates
 monomer_filename = "tests/monomer/1clm.pdb"
 xyz_coords = pplutils.pdb_to_xyz(monomer_filename)
