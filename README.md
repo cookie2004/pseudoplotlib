@@ -1,7 +1,7 @@
 # PseudoPlotLib
 # Forked from @sokrypton
 
-<img src='./tests/traj/idp_traj.mp4' width='600' style="horizontal-align:middle">
+<img src='./docs/idp_traj-ezgif.com-crop.gif' width='600' style="horizontal-align:middle">
 
 This repository provides tools to generate pseudo protein structures.  
 
