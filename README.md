@@ -1,7 +1,7 @@
 # PseudoPlotLib
 # Forked from @sokrypton
 
-<video src="https://github.com/cookie2004/pseudoplotlib/raw/main/tests/traj/idp_traj.mp4" autoplay loop muted width="100%"></video>
+<video src="https://github.com/cookie2004/pseudoplotlib/tree/main/tests/traj/idp_traj.mp4" autoplay loop muted width="100%"></video>
 
 This repository provides tools to generate pseudo protein structures.  
 
