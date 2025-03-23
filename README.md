@@ -3,11 +3,9 @@
 
 https://github.com/cookie2004/pseudoplotlib/raw/main/tests/traj/idp_traj.mp4
 
-<video src="https://github.com/cookie2004/pseudoplotlib/blob/main/tests/traj/idp_traj.mp4" autoplay loop muted width="100%"></video>
+<img src='https://github.com/cookie2004/pseudoplotlib/raw/main/tests/traj/idp_traj.mp4' width='600' style="horizontal-align:middle">
 
-<video src="https://github.com/cookie2004/pseudoplotlib/raw/main/tests/traj/idp_traj.mp4" autoplay loop muted width="100%"></video>
 
-<video src="https://raw.githubusercontent.com/cookie2004/pseudoplotlib/main/tests/traj/idp_traj.mp4" autoplay loop muted width="100%"></video>
 
 
 This repository provides tools to generate pseudo protein structures.  
