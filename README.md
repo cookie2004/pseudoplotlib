@@ -34,7 +34,9 @@ PseudoPlotLib is a specialized plotting library designed for visualizing pseudo 
 ## Usage
 
 ```python
-import pseudoplotlib as ppl
+import pseudoplotlib.pyplot as pplt
+import pseudoplotlib.utils as pplutils
+import matplotlib.pylab as plt
 
 # Basic example
 # Load and convert PDB file to XYZ coordinates
