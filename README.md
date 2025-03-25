@@ -53,7 +53,7 @@ idp_traj_filename = "tests/traj/idp_traj.pdb"
 xyz_coords = pplt.pdb_traj_to_xyz(idp_traj_filename)
 # Plot the XYZ coordinates
 animation = pplt.make_animation(xyz_coords, ax=ax)
-animation.save('tests/traj/idp_traj.mp4')
+animation.save('tests/traj/idp_traj.gif')
 
 ```
 
