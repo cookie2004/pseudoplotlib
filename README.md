@@ -44,6 +44,7 @@ monomer_filename = "tests/monomer/1clm.pdb"
 xyz_coords = pplutils.pdb_to_xyz(monomer_filename)
 # Plot the XYZ coordinates
 fig, ax = plt.subplots()
+#cmap can be your favorite matplotlib cmap!
 pplt.pseudo(xyz_coords, ax=ax, cmap='viridis')
 plt.show()
 
